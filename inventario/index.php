@@ -1,16 +1,30 @@
 <?php
 include("../../BHermanos/header.php");
 ?>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="../index.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
      <form style="background-color: #ff621b; opacity: 0.90;">
         <div style="border: 1px solid #292b2c;" >
-            <h4 class="mx-auto" style=" padding:2%; color:white; text-align:center;">INVENTARIO</h4>
+            <h4 class="mx-auto" >INVENTARIO</h4>
         </div>
         </form>
 
         <!--Contenido de la tabla-->
         
-        
-        <table class="table table-striped table-hover">
+        <div class="m-5">
+        <table class="table table-striped table-bordered table-sm ">
         <thead class="">
             <tr>
             <th scope="col">ID</th>
@@ -65,4 +79,9 @@ include("../../BHermanos/header.php");
   
     </table>
     <a href="../../BHermanos/venta/nuevo_articulo.php"><button style="float:right" class="btn btn-primary">Registrar nuevo articulo</button></a>
-
+    </div>
+    </body>
+    </html>
+    <?php 
+include("../footer.php");
+ ?>

@@ -5,6 +5,7 @@ html {
   body {
     font-family: "Poppins", sans-serif;
     height: 80vh;
+    font-family: 'Noto Sans JP', sans-serif;
   }
   
   a {
@@ -273,16 +274,16 @@ html {
   }
   @keyframes banner{
     0%, 20%{
-      background-image: url(IMGS/1w.png);
+      background-image: url(IMGS/1wall.jpg);
     }
     25%, 45%{
-      background-image: url(IMGS/2w.jpg);
+      background-image: url(IMGS/5wall.jpg);
     }
     50%, 70%{
-      background-image: url(https://iphoneros.com/wp-content/uploads/2016/02/mb.jpg);
+      background-image: url(IMGS/3wall.jpg);
     }
     75%, 100%{
-      background-image: url(https://s1.1zoom.me/big0/362/Forests_Winter_Mountains_461057.jpg);
+      background-image: url(IMGS/2wall.jpg);
     }
   }
   .capa{
@@ -317,4 +318,9 @@ html {
     padding: 16px 37px;
     display: inline-block;
     border-radius: 50px;
+  }
+
+  .mx-auto{
+    padding:2%; color:white; text-align:center;
+    font-size: xx-large;
   }

@@ -13,8 +13,13 @@
     <head>
         <title>Inventario</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="../index.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <form action="buscar.php" method="POST">
@@ -28,7 +33,7 @@
             {
                 while($row = mysqli_fetch_array($result))
                 {
-                    echo "<div class='tabla'>";
+                    echo "<div class='m-5'>";
                         echo"<img src='img/".$row['img_dir']."'>";
                         echo"<p> <b>Nombre: </b>".$row['nombrezapato']."</p>";
                         echo"<p> <b>Marca: </b>".$row['marca']."</p>";
